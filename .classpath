@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.contenttype_3.4.1.R35x_v20090826-0451.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.jobs_3.4.100.v20090429-1800.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.resources_3.5.2.R35x_v20091203-1235.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.runtime_3.5.0.v20090525.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.common_3.5.1.R35x_v20090807-1100.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.preferences_3.2.301.R35x_v20091117.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.osgi_3.5.2.R35x_v20100126.jar"/>
+	<classpathentry kind="lib" path="lib/jgraph-5.13.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht-core-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht-demo-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht-ext-0.9.1-uber.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht-ext-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/jgraphx-2.0.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jamtio.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.core_3.10.2.v20150120-1634.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
