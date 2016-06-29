@@ -27,4 +27,11 @@ public class Vertex {
 		}
 	}
 
+	
+	public String getName(){		
+		String name = ""+ASTNode.nodeClassForType(node.getNodeType());
+		String info[] = name.split("\\.");
+
+		return info[info.length-1];
+	} 
 }

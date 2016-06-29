@@ -8,6 +8,7 @@ import edu.wm.cs.ast2bin.algorithm.Analysis;
 import edu.wm.cs.ast2bin.algorithm.GenerateTrainingCorpus;
 import edu.wm.cs.ast2bin.algorithm.LexemsFileCreator;
 import edu.wm.cs.ast2bin.algorithm.NonTerminalFrequency;
+import edu.wm.cs.ast2bin.algorithm.ast.unstructured.ASTUnstructuredCorpus;
 import edu.wm.cs.ast2bin.algorithm.binary.builder.BinaryTreeBuilder;
 import edu.wm.cs.ast2bin.algorithm.deep.learner.ASTTraningCorpus;
 import edu.wm.cs.ast2bin.ast.SourceFileAnalyzer;
@@ -27,6 +28,7 @@ public class Main {
 	private static final String AST_BASED_CORPUS = "ast-based-corpus"; 
 	private static final String STATISTICS = "statistics"; 
 	private static final String GENERATE_METHOD_CORPUS = "generate-method-corpus"; 
+	private static final String UNSTRUCTURED_AST_CORPUS_FILE = "unstructured-ast-corpus-file"; 
 
 	
 	
@@ -145,7 +147,16 @@ public class Main {
 			GenerateTrainingCorpus.generateMethodsTrainingCorpus(projectPath, corpusPath+"corpus_merged.method.txt", pathsPath+"paths_merged.method.txt", true, javaVersion, minLen, maxLen);
 
 			
+		}else if(task.equalsIgnoreCase(UNSTRUCTURED_AST_CORPUS_FILE)){
+			String projectPath = args[2];
+			String corpusPath = args[3];
+			String pathsPath = args[4];
+			int javaVersion = Integer.parseInt(args[5]);
+
+			ASTUnstructuredCorpus.generateProjectCorpus(projectPath, corpusPath, pathsPath, javaVersion);
+			
 		}else{
+	
 
 			printErrorWrongTask();
 		}
